@@ -187,13 +187,13 @@ The negation of _equalToOriginal_. This method is why ImmutableFancySet (and Fan
 
 Imagine getting a set from the backend that you store in react state.
 
-The user can add and delete from the set, and you want to provide a save button (save current set state to back-end database) that is enable **only if** the current set is different from the original set received from the back-end. ImmutableFancySet is a datatype that can do all of that for you
+The user can add and delete from the set, and you want to provide a save button (save current set state to back-end database) that is enabled **only if** the current set is different from the original set received from the back-end. ImmutableFancySet is a datatype that can do all of that for you.
 
 ```
 <button disabled={!set.hasChanged} ... >
 ```
 
-or however it's easier to read for you 
+however it's easier to read for you 
 
 ```
 <button disabled={set.equalToOriginal} ... >
@@ -202,3 +202,25 @@ or however it's easier to read for you
 ##### original
 
 Returns either the property originalImmutableFancySet or the ImmutableFancySet itself.
+
+---
+#### FancySet's equalToOriginal, hasChanged, and original
+
+FancySet has analogous _equalToOriginal_, _hasChanged_, and _original_ methods that work for a mutatey FancySet.
+
+```
+let a = new ImmutableFancySet([1,2,3]); // [1,2,3]  does not point to an IFS
+a.add(4);
+a.add(5);
+a.add(6); // notice: FancySet uses Set's add method (1 arg at a time)
+
+a.equalToOriginal() // false
+
+a.delete(6);
+a.delete(5);
+a.delete(4);
+
+a.equalToOriginal(); // true
+```
+
+(These use the _originalFancySet_ property.)
