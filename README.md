@@ -101,7 +101,7 @@ b; // [1,2,3,5,6,7]
 
 #### Delete
 
-Like _add_, _delete_ can take multiple arguments, and _delete_, like _add_ **does not mutate** the IFS.
+Like _add_, _delete_ can take multiple arguments, and, like _add_, **does not mutate** the IFS.
 _delete_ return a new IFS, unlike _Set_'s _delete_ which return true or false.
 
 Example:
