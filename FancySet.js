@@ -109,8 +109,8 @@ class ImmutableFancySet extends FancySet {
 
     if ([undefined, null].includes(x))
       return;
-    if (Object.getPrototypeOf(x) === protoWithAddAndDeleteOverrided) {
+    
+    if (Object.getPrototypeOf(x) === protoWithAddAndDeleteOverrided)
       this.originalImmutableFancySet = x.original();
-    }
   }
 }
