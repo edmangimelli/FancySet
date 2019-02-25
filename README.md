@@ -99,6 +99,7 @@ a; // [1,2,3]
 b; // [1,2,3,5,6,7]
 ```
 
+
 #### Delete
 
 Like _add_, _delete_ can take multiple arguments, and, like _add_, **does not mutate** the IFS.
@@ -107,6 +108,12 @@ _delete_ returns a set, unlike _Set_'s _delete_ which returns true or false.
 
 Example:
 
+```
+let a = new ImmutableFancySet([1,2,3]);
+let b = a.delete(2,3);
+a; // [1,2,3]
+b; // [1]
+```
 
 
 #### Clear
@@ -114,7 +121,7 @@ Example:
 _clear_ is simply undefined for IFSes.
 
 
-#### equalToOriginal
+#### originalImmutableFancySet property
 
 When creating an IFS from another IFS.
 
