@@ -137,7 +137,7 @@ The new IFS gets a property _originalImmutableFancySet_, which points to the IFS
 Example:
 
 ```
-let a = new ImmutableFancySet([1,2,3]);
+let a = new ImmutableFancySet([1,2,3]); // no oIFS (made from an array, not an IFS)
 b = a.add(4); oIFS == a
 c = b.add(5); oIFS still == a
 d = c.add(6); oIFS is, yes, still == a
