@@ -67,7 +67,7 @@ These methods do exactly what you think. I'll explain _equalToOriginal_, _hasCha
 ### ImmutableFancySet
 
 
-ImmutableFancySet overrides all of the mutating methods of set—add, delete, and clear—with non-mutating versions, and provide a few more functions which provide a way of knowing whether knew derived IFSes have deviated from the first one.
+ImmutableFancySet overrides all of the mutating methods of set—add, delete, and clear—with non-mutating versions, and provides a few more functions which give one a way to know whether or not derived IFSes have deviated from the first one.
 
 ImmutableFancySet provides the following methods:
 
