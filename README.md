@@ -6,7 +6,7 @@ _FancySet_ extends _Set_ to include all the bells and whistles one often needs w
 
 _ImmutableFancySet_ extends _FancySet_ with new versions of _add_ and _delete_ that always return a new set (instead of mutating the current one).
 
-If you create a new ImmutableFancySet from a new one. For instance:
+If you create a new ImmutableFancySet from an existing ImmutableFancySet. For instance:
 
 ```
 let a = new ImmutableFancySet([1,2,3]);
