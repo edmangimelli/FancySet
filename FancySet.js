@@ -67,11 +67,11 @@ class FancySet extends Set {
 function immutableActionHelper({items, action}) {
   action = Set.prototype[action];
   const result = new ImmutableFancySet(this);
-  for (item of new Set(items)) action.call(result, item);
+  for (const item of new Set(items)) action.call(result, item);
   return result;
 }
 
-protoWithAddAndDeleteOverrided = {
+const protoWithAddAndDeleteOverrided = {
   add: function(...items) {
     return immutableActionHelper.call(this, {items, action: 'add'})
   },
