@@ -114,3 +114,8 @@ class ImmutableFancySet extends FancySet {
     }
   }
 }
+
+module.exports = {
+  ImmutableFancySet,
+  FancySet,
+}

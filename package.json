@@ -1,0 +1,27 @@
+{
+  "name": "fancyset",
+  "version": "1.0.0",
+  "description": "## TL;DR",
+  "main": "FancySet.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tap-color": "^1.1.0",
+    "zora": "^2.0.1"
+  },
+  "scripts": {
+    "test": "node test.js | tap-color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/edmangimelli/FancySet.git"
+  },
+  "keywords": [
+    "set"
+  ],
+  "author": "edmangimelli",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/edmangimelli/FancySet/issues"
+  },
+  "homepage": "https://github.com/edmangimelli/FancySet#readme"
+}
