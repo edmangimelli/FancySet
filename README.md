@@ -1,15 +1,12 @@
 # FancySet & ImmutableFancySet
 
-## Simply:
+## TL;DR
 
-FancySet extends Set to include all the bells and whistles one often needs when working with sets.
+_FancySet_ extends _Set_ to include all the bells and whistles one often needs when working with sets.
 
-ImmutableFancySet extends FancySet with new versions of add and delete that always return a new set (instead of mutating the current one).
+_ImmutableFancySet_ extends _FancySet_ with new versions of _add_ and _delete_ that always return a new set (instead of mutating the current one).
 
-
-More:
-
-Also, if you create a new ImmutableFancySet from a new one. For instance:
+If you create a new ImmutableFancySet from a new one. For instance:
 
 ```
 let a = new ImmutableFancySet([1,2,3]);
@@ -40,7 +37,7 @@ This ^^^ feature is why ImmutableFancySet (and FancySet) were made. I needed som
 
 
 
-## More:
+## README
 
 ### FancySet
 
@@ -142,10 +139,12 @@ The purpose of this was to have a set that played well with React state (didn't 
 
 The following methods are tools for working with oIFS
 
+```
 isTheOriginal
 equalToOriginal
 hasChanged
 original
+```
 
 ##### isTheOriginal
 
