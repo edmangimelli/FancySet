@@ -153,10 +153,12 @@ equalToOriginal
 hasChanged
 original
 ```
+
 ---
 ##### isTheOriginal
 
 Returns true if the IFS _doesn't_ have the property _orignalImmutableFancySet_.
+
 ---
 ##### equalToOriginal
 
@@ -177,6 +179,7 @@ f = e.delete(7,6,5,4);
 
 f.equalToOriginal(); // true
 ```
+
 ---
 ##### hasChanged
 
