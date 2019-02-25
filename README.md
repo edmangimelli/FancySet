@@ -55,7 +55,7 @@ hasChanged
 original
 ```
 
-isSuperSet, union, intersection, symmetricDifference, and difference are taken, with some modification, from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#Implementing_basic_set_operations)
+_isSuperSet_, _union_, _intersection_, _symmetricDifference_, and _difference_ are taken, with some modification, from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#Implementing_basic_set_operations)
 
 _equal_ builds off of those.
 
