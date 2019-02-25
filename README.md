@@ -1,6 +1,6 @@
-#FancySet & ImmutableFancySet
+# FancySet & ImmutableFancySet
 
-##Simply:
+## Simply:
 
 FancySet extends Set to include all the bells and whistles one often needs when working with sets.
 
@@ -40,9 +40,9 @@ This ^^^ feature is why ImmutableFancySet (and FancySet) were made. I needed som
 
 
 
-##More:
+## More:
 
-###FancySet
+### FancySet
 
 FancySet provides the following methods:
 
@@ -67,7 +67,7 @@ These methods do exactly what you think. I'll explain _equalToOriginal_, _hasCha
 
 
 
-###ImmutableFancySet
+### ImmutableFancySet
 
 
 ImmutableFancySet overrides all of the mutating methods of set—add, delete, and clear—with non-mutating versions, and provide a few more functions which provide a way of knowing whether knew derived IFSes have deviated from the first one.
@@ -84,7 +84,7 @@ hasChanged
 original
 ```
 
-####Add
+#### Add
 
 Unlike _Set_'s version of _add_, IFS's _add_ can take multiple arguments, allowing you to add multiple items at once.
 Add **does not mutate** the IFS.
@@ -102,7 +102,7 @@ a; // [1,2,3]
 b; // [1,2,3,5,6,7]
 ```
 
-####Delete
+#### Delete
 
 Like _add_, _delete_ can take multiple arguments, and _delete_, like _add_ **does not mutate** the IFS.
 _delete_ return a new IFS, unlike _Set_'s _delete_ which return true or false.
@@ -111,12 +111,12 @@ Example:
 
 
 
-####Clear
+#### Clear
 
 _clear_ is simply undefined for IFSes.
 
 
-####equalToOriginal
+#### equalToOriginal
 
 When creating an IFS from another IFS.
 
@@ -147,11 +147,11 @@ equalToOriginal
 hasChanged
 original
 
-#####isTheOriginal
+##### isTheOriginal
 
 Returns true if the IFS _doesn't_ have the property _orignalImmutableFancySet_.
 
-#####equalToOriginal
+##### equalToOriginal
 
 This example from above illustrates how equalToOriginal works:
 
@@ -171,7 +171,7 @@ f = e.delete(7,6,5,4);
 f.equalToOriginal(); // true
 ```
 
-#####hasChanged
+##### hasChanged
 
 The negation of _equalToOriginal_. This method is why ImmutableFancySet (and FancySet) were made.
 
@@ -189,6 +189,6 @@ or however it's easier to read for you
 <button disabled={set.equalToOriginal} ... >
 ```
 
-#####original
+##### original
 
 Returns either the property originalImmutableFancySet or the ImmutableFancySet itself.
