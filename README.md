@@ -132,7 +132,7 @@ c = a.add(4); // new IFS based off of 'a'
 ```
 
 The new IFS gets a property _originalImmutableFancySet_, which points to the IFS that the IFS was made from.
-**If IFS _x_ is made from IFS _y_, and _y_ has the property _originalImmmutableFancySet_, the _x_'s _originalImmutableFancySet_ will be set to _y_'s _originalImmutableFancySet_.**
+**If IFS _x_ is made from IFS _y_, and _y_ has the property _originalImmmutableFancySet_, _x_'s _originalImmutableFancySet_ will be set to _y_'s _originalImmutableFancySet_.**
 
 Example:
 
