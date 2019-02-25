@@ -80,7 +80,7 @@ equalToOriginal
 hasChanged
 original
 ```
-
+---
 #### Add
 
 Unlike _Set_'s version of _add_, IFS's _add_ can take multiple arguments, allowing you to add multiple items at once.
@@ -99,7 +99,7 @@ a; // [1,2,3]
 b; // [1,2,3,5,6,7]
 ```
 
-
+---
 #### Delete
 
 Like _add_, _delete_ can take multiple arguments, and, like _add_, **does not mutate** the IFS.
@@ -115,12 +115,12 @@ a; // [1,2,3]
 b; // [1]
 ```
 
-
+---
 #### Clear
 
 _clear_ is simply undefined for IFSes.
 
-
+---
 #### originalImmutableFancySet property
 
 When creating an IFS from another IFS.
@@ -153,11 +153,11 @@ equalToOriginal
 hasChanged
 original
 ```
-
+---
 ##### isTheOriginal
 
 Returns true if the IFS _doesn't_ have the property _orignalImmutableFancySet_.
-
+---
 ##### equalToOriginal
 
 This example from above illustrates how equalToOriginal works:
@@ -177,7 +177,7 @@ f = e.delete(7,6,5,4);
 
 f.equalToOriginal(); // true
 ```
-
+---
 ##### hasChanged
 
 The negation of _equalToOriginal_. This method is why ImmutableFancySet (and FancySet) were made.
@@ -195,7 +195,7 @@ or however it's easier to read for you
 ```
 <button disabled={set.equalToOriginal} ... >
 ```
-
+---
 ##### original
 
 Returns either the property originalImmutableFancySet or the ImmutableFancySet itself.
